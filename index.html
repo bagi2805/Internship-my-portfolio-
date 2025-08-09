@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <main class="section" id="home">
+    <h1>Welcome to my Portfolio</h1>
+    <img src="https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg?w=740" alt="Profile Picture" class="profile-pic">
+    <h3>Hi I'm BAHAVATHI</h3>
+    <p>I'm a passionate and dedicated web developer with a strong interest in building responsive and user-friendly websites and applications.</p>
+    <p>I strive to contribute to meaningful projects and continuously grow as a professional in the tech industry.</p>
+  </main>
+
+  <!-- About -->
+  <main class="section" id="about">
+    <h2 style="text-align: center;">Hi, Im BAHAVATHI</h2>
+    <p class="about-intro">
+      I'm a passionate developer with skills in both frontend and backend technologies. I enjoy building responsive websites and solving real-world problems through code. I'm seeking opportunities to grow, collaborate, and contribute to innovative tech projects.
+    </p>
+    <div class="about-box-container">
+      <div class="about-box skill-card">
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li><img src="https://img.icons8.com/color/20/power-bi.png"/> Power BI</li>
+          <li><img src="https://img.icons8.com/color/20/figma--v1.png"/> Figma</li>
+          <li><img src="https://img.icons8.com/material-outlined/20/000000/github.png"/> Git & GitHub</li>
+          <li><img src="https://img.icons8.com/color/20/visual-studio-code-2019.png"/> VS Code</li>
+        </ul>
+      </div>
+      <div class="about-box skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li><img src="https://img.icons8.com/color/20/python.png"/> Python</li>
+          <li><img src="https://img.icons8.com/color/20/java-coffee-cup-logo.png"/> Java</li>
+          <li><img src="https://img.icons8.com/color/20/html-5.png"/> HTML / CSS</li>
+          <li><img src="https://img.icons8.com/color/20/javascript--v1.png"/> JavaScript</li>
+        </ul>
+      </div>
+      <div class="about-box skill-card">
+       <h3>Backend & Databases</h3>
+<ul>
+  <li><img src="https://img.icons8.com/color/20/nodejs.png" alt="Node.js" /> Node.js</li>
+  <li><img src="https://img.icons8.com/color/20/mongodb.png" alt="MongoDB" /> MongoDB</li>
+  <li><img src="https://img.icons8.com/ios-filled/20/mysql-logo.png" alt="MySQL" /> MySQL</li>
+</ul>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Projects -->
+  
+  <main class="section" id="projects">
+  <h2>Here are my Projects</h2>
+
+  <div class="github-container">
+    <img src="https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg" width="30" height="30" alt="Vercel Logo" />
+    <span class="portfolio-title">My Portfolio</span>
+    <a href="https://internship-project-3dnc.vercel.app/" target="_blank" class="view-btn">View Project</a>
+  </div>
+
+  <div class="github-container">
+    <img src="https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg" width="30" height="30" alt="Vercel Logo" />
+    <span class="portfolio-title">Weather App</span>
+    <a href="https://weather-app-bilp.vercel.app/" target="_blank" class="view-btn">View Project</a>
+  </div>
+
+  <div class="github-container">
+    <img src="https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg" width="30" height="30" alt="Vercel Logo" />
+    <span class="portfolio-title">LBCA App</span>
+    <a href="https://internship-project-b7qm.vercel.app/" target="_blank" class="view-btn">View Project</a>
+  </div>
+</main>
+
+
+  <!-- Resume -->
+  <main class="section" id="resume">
+    <h2>Hi here is my Resume</h2>
+    <p>Click below to view my resume:</p>
+    <a href="assets/resume.pdf" target="_blank" class="btn">View</a>
+   <a href="assets/resume.pdf" download class="btn">Download</a>
+
+
+
+    <div class="social-container">
+      <h3>Find Me Online</h3>
+      <div class="social-buttons">
+        <a href="https://github.com/XX2805" target="_blank" class="social-btn">
+          <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" /> GitHub
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank" class="social-btn">
+          <img src="https://img.icons8.com/ios-filled/30/000000/linkedin.png" /> LinkedIn
+        </a>
+        <a href="mailto:yourname@gmail.com" target="_blank" class="social-btn">
+          <img src="https://img.icons8.com/ios-filled/30/000000/gmail-new.png" /> Email
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Contact -->
+  <main class="section" id="contact">
+    <h2>Stay in Touch</h2>
+   <form id="contact-form" autocomplete="off" onsubmit="return showSuccessMessage(event)">
+  <input type="text" id="name" placeholder="Name" required autocomplete="off" />
+  <input type="email" id="email" placeholder="Email" required autocomplete="off" />
+  <input type="tel" id="phone" placeholder="Phone" required autocomplete="off" />
+  <textarea id="message" rows="4" placeholder="Drop your message here..." required autocomplete="off"></textarea>
+  
+  <div class="form-buttons">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="goHome()">Exit</button>
+  </div>
+</form>
+
+    
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 @bahavathi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
